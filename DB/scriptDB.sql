@@ -236,7 +236,5 @@ VALUES (1, 4, 'Compra', '2024-09-12', null),
 		(1, 1, 'Prestamo', '2024-09-21', '2024-10-01');
         
 INSERT INTO Usuarios(nombre_usuario, clave, tipo_usuario, telefono_usuario, email)
-VALUES ('root', 'root123', 'root', '7633-5320', 'guilleacc26@gmail.com')
-
-SELECT * FROM usuarios
+VALUES ('root', 'root123', 'root', '7633-5320', 'guilleacc26@gmail.com');
 
