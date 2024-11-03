@@ -14,6 +14,7 @@ import java.awt.Color;
 import java.awt.Shape;
 import java.awt.geom.RoundRectangle2D;
 import javax.swing.JComponent;
+import javax.swing.JOptionPane;
 
 public class Principal extends javax.swing.JFrame {
 
@@ -60,7 +61,12 @@ public class Principal extends javax.swing.JFrame {
                 } else if(index == 10) {
                     setForm(frmUsuarios);
                 } else if(index == 13) {
-                    System.exit(0);
+                    int confirmacion = JOptionPane.showConfirmDialog(null, "¿Seguro que deseas salir?", "Confirmacion de salida", JOptionPane.YES_NO_OPTION);
+                    if(confirmacion == JOptionPane.YES_OPTION) {
+                        Principal.this.dispose();
+                        Login lg = new Login();
+                        lg.setVisible(true);
+                    }
                 }
             }});
         
