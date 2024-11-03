@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import modelo.productosModelo;
 
-public class libroControlador extends productosControlador{
+public class libroControlador {
     
     libroModelo objmodelo = new libroModelo();
     productosModelo objProductoModelo = new productosModelo();
@@ -39,7 +39,7 @@ public class libroControlador extends productosControlador{
     
     // Agregamos un metodo de retorno para actualizar el libro
     public void actualizarProductoYLibroController(int p_idProducto, String p_titulo, float p_precio, int p_unidades, int p_idTipoP, String p_autor, int p_numeroPags, String p_editorial, String p_ISBN, String p_fechaIngreso) {
-        boolean productoActualizado = objModelo.actualizarProducto(p_idProducto, p_titulo, p_precio, p_unidades, p_idTipoP);
+        boolean productoActualizado = objProductoModelo.actualizarProducto(p_idProducto, p_titulo, p_precio, p_unidades, p_idTipoP);
         if(productoActualizado) {
             boolean libroActualizado = objmodelo.actualizarLibro(p_idProducto, p_autor, p_numeroPags, p_editorial, p_ISBN, p_fechaIngreso);
             if(libroActualizado){
@@ -56,7 +56,7 @@ public class libroControlador extends productosControlador{
     public void eliminarProductoYLibroController(int p_idProducto) {
         boolean libroEliminado = objmodelo.eliminarLibro(p_idProducto);
         if(libroEliminado){
-            boolean productoEliminado = objModelo.eliminarProducto(p_idProducto);
+            boolean productoEliminado = objProductoModelo.eliminarProducto(p_idProducto);
             if(productoEliminado) {
                 JOptionPane.showMessageDialog(null, "Libro eliminado exitosamente", "Proceso completo", JOptionPane.INFORMATION_MESSAGE);
             } else {
