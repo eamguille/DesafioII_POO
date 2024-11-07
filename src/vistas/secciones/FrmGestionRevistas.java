@@ -268,7 +268,6 @@ public class FrmGestionRevistas extends javax.swing.JPanel {
         btnLimpiar = new vistas.swing.ButtonGradient();
         btnActualizar = new vistas.swing.ButtonGradient();
         btnEliminar = new vistas.swing.ButtonGradient();
-        dtFecha = new com.toedter.calendar.JDateChooser();
         cmbTipoProducto = new vistas.componentes.ComboBox.ComboBox();
         txtTitulo = new vistas.componentes.TextFields.TextField();
         txtPeriodicidad = new vistas.componentes.TextFields.TextField();
@@ -325,11 +324,6 @@ public class FrmGestionRevistas extends javax.swing.JPanel {
             }
         });
 
-        dtFecha.setBackground(new java.awt.Color(244, 239, 250));
-        dtFecha.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(47, 24, 75)));
-        dtFecha.setForeground(new java.awt.Color(47, 24, 75));
-        dtFecha.setDateFormatString("yyyy-MM-dd");
-
         cmbTipoProducto.setLabeText("Tipo Producto");
         cmbTipoProducto.setLineColor(new java.awt.Color(47, 24, 75));
 
@@ -359,10 +353,8 @@ public class FrmGestionRevistas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6)
-                                    .addComponent(dtFecha, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 20, Short.MAX_VALUE)
                                 .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(cmbTipoProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -410,8 +402,7 @@ public class FrmGestionRevistas extends javax.swing.JPanel {
                             .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel6)
-                                .addGap(7, 7, 7)
-                                .addComponent(dtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(42, 42, 42)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -511,7 +502,6 @@ public class FrmGestionRevistas extends javax.swing.JPanel {
     private vistas.swing.ButtonGradient btnEliminar;
     private vistas.swing.ButtonGradient btnLimpiar;
     private vistas.componentes.ComboBox.ComboBox cmbTipoProducto;
-    private com.toedter.calendar.JDateChooser dtFecha;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

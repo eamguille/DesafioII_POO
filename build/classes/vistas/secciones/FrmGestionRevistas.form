@@ -68,11 +68,8 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="dtFecha" alignment="0" pref="140" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" pref="20" max="32767" attributes="0"/>
                                   <Component id="txtPrecio" min="-2" pref="173" max="-2" attributes="0"/>
                               </Group>
                               <Component id="cmbTipoProducto" alignment="0" max="32767" attributes="0"/>
@@ -135,8 +132,7 @@
                               <Component id="txtPrecio" min="-2" pref="58" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                                  <Component id="dtFecha" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -219,24 +215,6 @@
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEliminarMouseClicked"/>
           </Events>
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="dtFecha">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="fa" green="ef" red="f4" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder>
-                  <Color PropertyName="color" blue="4b" green="18" red="2f" type="rgb"/>
-                </LineBorder>
-              </Border>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="4b" green="18" red="2f" type="rgb"/>
-            </Property>
-            <Property name="dateFormatString" type="java.lang.String" value="yyyy-MM-dd"/>
-          </Properties>
         </Component>
         <Component class="vistas.componentes.ComboBox.ComboBox" name="cmbTipoProducto">
           <Properties>
